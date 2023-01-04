@@ -34,6 +34,7 @@ python manage.py runserver
 The API will be available at http://localhost:8000/.
 
 Endpoints
+
 The following API endpoints are available:
 
 /users/: List of known users
@@ -41,5 +42,6 @@ The following API endpoints are available:
 You can use HTTP methods such as GET, POST, PUT, and DELETE to perform actions on these endpoints.
 
 Authentication
+
 The API uses Django's built-in authentication system to authenticate users. To make authenticated requests, you will need to include a Authorization: Token YOUR_TOKEN header in your request, where YOUR_TOKEN is the token for the user you want to authenticate as. You can obtain a user's token by sending a POST request to the /api-token-auth/ endpoint with the user's username and password.
 
